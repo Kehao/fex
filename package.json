@@ -1,0 +1,59 @@
+{
+  "name": "fex",
+  "description": "Frontend X",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "./scripts/dev_server.sh",
+    "release": "./scripts/release_server.sh",
+    "build": "./scripts/build_component.sh",
+    "clean": "./scripts/clean_component.sh",
+    "watch": "./scripts/watch_component.sh"
+  },
+  "dependencies": {
+    "lodash": "^5.11.1"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.1",
+    "colors": "^1.1.2",
+    "css-loader": "^0.23.1",
+    "del": "^2.2.0",
+    "glob": "^7.0.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-babel": "^6.1.2",
+    "gulp-base64": "^0.1.3",
+    "gulp-cache": "^0.4.4",
+    "gulp-cdn-replace": "^0.3.0",
+    "gulp-cdnify": "^1.0.5",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.0",
+    "gulp-htmlmin": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.2.2",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^7.0.0",
+    "gulp-rev-collector": "^1.0.3",
+    "gulp-rev-replace": "^0.4.3",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3",
+    "gulp-webserver": "^0.9.1",
+    "node-sass": "^3.6.0",
+    "rev-del": "^1.0.5",
+    "through2": "^2.0.1"
+  },
+  "browser": {
+    "zepto": "./src/lib/zepto/1.1.6/zepto.min.js"
+  },
+  "browserify-shim": {
+    "zepto": "$"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
+}
